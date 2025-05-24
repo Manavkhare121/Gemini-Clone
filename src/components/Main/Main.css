@@ -28,7 +28,7 @@
 }
 .main .greet span{
     background:-webkit-linear-gradient(16deg,#4b90ff,#ff5546);
-    -webkit-background-clip: text;
+    -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
 }
 .main .cards{
@@ -101,4 +101,55 @@
     margin:15px auto;
     text-align: center;
     font-weight: 300;
+}
+.Result{
+    padding:0px 5px;
+    max-height: 70vh;
+   
+    overflow-y: scroll;
+
+        
+}
+.Result::-webkit-scrollbar{
+    display: none;
+}
+.title{
+    margin:40x 0px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.Result img{
+    width:40px;
+    border-radius: 50%;
+}
+.result-data{
+    margin-top: 2rem;
+    display: flex;
+    align-items: start;
+    gap:20px;
+}
+.loading{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.loading hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#9ed7ff);
+    background-size:800px 50px;
+    height:20px;
+    animation: loading 3s infinite linear;
+
+}
+@keyframes loading{
+    0%{
+        background-position:-800px 0px;
+    }
+    100%{
+        background-position:800px 0px;
+    }
 }
