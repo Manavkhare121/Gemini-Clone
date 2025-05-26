@@ -76,14 +76,13 @@ const Main = () => {
             <div>
               <img src={assets.gallery_icon} />
               <img src={assets.mic_icon} />
-              <img
-                onClick={!loading ? () => onSent() : null}
+              {input?<img onClick={()=>onSent()} 
                 src={assets.send_icon}
                 style={{
                   opacity: loading ? 0.5 : 1,
                   cursor: loading ? "not-allowed" : "pointer",
                 }}
-              />
+              />:null}
             </div>
           </div>
           <p className="bottom-info">
