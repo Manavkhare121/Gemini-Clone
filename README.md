@@ -34,8 +34,11 @@ The goal of this project was to **explore React.js**, work with **state manageme
 * **JavaScript (ES6+)** – logic and interactivity
 
 ---
+🌍 Live Demo / Testing Link
 
+👉 http://gemini-clone-eosin-eta.vercel.app
 
+---
 
 ## 💡 My Learning Experience
 
